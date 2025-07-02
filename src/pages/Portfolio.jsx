@@ -79,7 +79,7 @@ const Portfolio = () => {
             description: 'A responsive website for barber shop.',
             technologies: ['HTML5','JavaScript', , 'CSS3'],
             github: 'https://github.com/Aditya-Swain/Barber_shop_',
-            live: 'https://calm-banoffee-e8d25a.netlify.app/',
+            live: 'https://barbershopgg.netlify.app/',
             image: barbarShop
         }
     ];
