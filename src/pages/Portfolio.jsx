@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, ExternalLink, Code, Server, Database, Smartphone, ChevronDown, Menu, X, MapPin, Calendar, Award } from 'lucide-react';
 import barbarShop from '../assets/barber_shop.png'
-import invRocket from '../assets/inv_rocket.png'
+import invRocket from '../assets/inv_rocket_1.png'
 import yourStock from '../assets/your_stock.png'
 const Portfolio = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,15 +61,15 @@ const Portfolio = () => {
         {
             title: 'Invoice Rocket',
             description: 'A full-stack application where people can manage & track  their business invoices.',
-            technologies: ['React.js', 'Django', 'MySQL', 'AG-Grid','Recharts'],
+            technologies: ['React.js', 'Django', 'MySQL', 'AG-Grid','Recharts','Material-UI'],
             github: '#',
             live: 'https://invoice-rocket.blogswrite.com',
             image: invRocket
         },
         {
-            title: 'Task Management App',
-            description: 'A collaborative task management tool with real-time updates and team collaboration features.',
-            technologies: ['React', 'Firebase', 'Material-UI', 'Socket.io'],
+            title: 'Stock Management & Recovery Calculation App',
+            description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
+            technologies: ['React.js', 'Django', 'Postgresql','Material-UI','AG-Grid', 'Socket.io','Recharts'],
             github: '#',
             live: '#',
             image: yourStock
