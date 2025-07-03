@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Download, ExternalLink, Code, Server, Database,
 import barbarShop from '../assets/barber_shop.png'
 import invRocket from '../assets/inv_rocket_1.png'
 import yourStock from '../assets/your_stock.png'
+import banking from '../assets/banking.png'
 const Portfolio = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
@@ -73,6 +74,14 @@ const Portfolio = () => {
             github: '#',
             live: '#',
             image: yourStock
+        },
+        {
+            title: 'Online Banking System',
+            description: 'An online banking system that allows users to manage accounts, view transaction history, and perform basic banking operations through a user-friendly interface.',
+            technologies: ['Spring Boot', 'CSS3','JSP','Bootstrap','MySQL'],
+            github: 'https://github.com/Aditya-Swain/online_banking',
+            live: '#',
+            image: banking
         },
         {
             title: 'Barber Shop',
