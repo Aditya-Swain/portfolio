@@ -467,7 +467,7 @@ const Portfolio = () => {
             {/* Footer */}
             <footer className="py-8 text-center border-t border-slate-700">
                 <p className="text-gray-400">
-                    © 2025 Aditya Swain. All rights reserved.
+                    © 2025 Aditya Swain.
                 </p>
             </footer>
         </div>
