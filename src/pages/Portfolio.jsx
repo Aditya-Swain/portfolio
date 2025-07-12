@@ -4,6 +4,7 @@ import barbarShop from '../assets/barber_shop.png'
 import invRocket from '../assets/inv_rocket_1.png'
 import yourStock from '../assets/your_stock.png'
 import banking from '../assets/banking.png'
+import cloudDrive from '../assets/cloud_drive.png'
 const Portfolio = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
@@ -39,9 +40,9 @@ const Portfolio = () => {
 
     //  resume download
     const handleResumeDownload = () => {
-        
+
         const link = document.createElement('a');
-        link.href = '/aditya_swain.pdf'; 
+        link.href = '/aditya_swain.pdf';
         link.download = 'AdityaSwain_Resume.pdf';
         link.click();
     };
@@ -55,22 +56,30 @@ const Portfolio = () => {
         frontend: ['React', 'JavaScript', 'JQuery', 'CSS3', 'HTML5', 'Tailwind CSS', 'Bootstrap5'],
         backend: ['Java', 'Spring Boot', 'Python', 'Django Rest Framework', 'REST APIs',],
         database: ['MySQL', 'PostgreSQL', 'MongoDB',],
-        tools: ['Git', 'VS Code', 'IntelliJ IDEA', 'Postman',]
+        tools: ['Git', 'VS Code', 'Eclipse', 'IntelliJ IDEA', 'Postman',]
     };
 
     const projects = [
         {
             title: 'Invoice Rocket',
             description: 'A full-stack application where people can manage & track  their business invoices.',
-            technologies: ['React.js', 'Django', 'MySQL', 'AG-Grid','Recharts','Material-UI'],
+            technologies: ['React.js', 'Django', 'MySQL', 'AG-Grid', 'Recharts', 'Material-UI', 'Tailwind CSS'],
             github: '#',
             live: 'https://invoice-rocket.blogswrite.com',
             image: invRocket
         },
         {
+            title: 'Cloud Drive App',
+            description: 'A full-stack cloud-based application that allows users to seamlessly connect and manage multiple cloud storage accounts (Google Drive, Dropbox, OneDrive) from a single unified interface.',
+            technologies: ['React.js','Spring Boot', 'Django', 'MySQL', 'Material-UI','Google Drive API','Dropbox API' ],
+            github: 'https://github.com/Aditya-Swain/cloud-drive',
+            live: '#',
+            image: cloudDrive
+        },
+        {
             title: 'Stock Management & Recovery Calculation App',
             description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
-            technologies: ['React.js', 'Django', 'Postgresql','Material-UI','AG-Grid', 'Socket.io','Recharts'],
+            technologies: ['React.js', 'Django', 'Postgresql', 'Material-UI', 'AG-Grid', 'Socket.io', 'Recharts'],
             github: '#',
             live: '#',
             image: yourStock
@@ -78,7 +87,7 @@ const Portfolio = () => {
         {
             title: 'Online Banking System',
             description: 'An online banking system that allows users to manage accounts, view transaction history, and perform basic banking operations through a user-friendly interface.',
-            technologies: ['Spring Boot', 'CSS3','JSP','Bootstrap','MySQL'],
+            technologies: ['Spring Boot', 'CSS3', 'JSP', 'Bootstrap', 'MySQL'],
             github: 'https://github.com/Aditya-Swain/online_banking',
             live: '#',
             image: banking
@@ -86,7 +95,7 @@ const Portfolio = () => {
         {
             title: 'Barber Shop',
             description: 'A responsive website for barber shop.',
-            technologies: ['HTML5','JavaScript', , 'CSS3'],
+            technologies: ['HTML5', 'JavaScript', , 'CSS3'],
             github: 'https://github.com/Aditya-Swain/Barber_shop_',
             live: 'https://barbershopgg.netlify.app/',
             image: barbarShop
@@ -217,7 +226,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-            
+
             </section>
 
             {/* About Section */}
