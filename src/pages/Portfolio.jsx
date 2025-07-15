@@ -72,7 +72,7 @@ const Portfolio = () => {
             title: 'Cloud Drive App',
             description: 'A full-stack cloud-based application that allows users to seamlessly connect and manage multiple cloud storage accounts (Google Drive, Dropbox, OneDrive) from a single unified interface.',
             technologies: ['React.js','Spring Boot', 'Django', 'MySQL', 'Material-UI','Google Drive API','Dropbox API' ],
-            github: 'https://github.com/Aditya-Swain/cloud-drive',
+            github: 'https://github.com/Aditya-Swain/cloud-drive-frontend',
             live: '#',
             image: cloudDrive
         },
