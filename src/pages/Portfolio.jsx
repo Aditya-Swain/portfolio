@@ -42,7 +42,7 @@ const Portfolio = () => {
     const handleResumeDownload = () => {
 
         const link = document.createElement('a');
-        link.href = '/aditya_swain.pdf';
+        link.href = '/aditya_resume.pdf';
         link.download = 'AdityaSwain_Resume.pdf';
         link.click();
     };
