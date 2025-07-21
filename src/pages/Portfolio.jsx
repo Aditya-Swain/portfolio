@@ -3,11 +3,11 @@ import { Github, Linkedin, Mail, Download, ExternalLink, Code, Server, Database,
 import barbarShop from '../assets/barber_shop.png'
 import invRocket from '../assets/inv_rocket_1.png'
 import yourStock from '../assets/your_stock.png'
+import stk2 from '../assets/stk2.png'
 import banking from '../assets/banking.png'
 import cloudDrive from '../assets/cloud_drive.png'
 const Portfolio = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('home');
     const [isVisible, setIsVisible] = useState({});
 
     // Intersection Observer for animations
@@ -61,6 +61,14 @@ const Portfolio = () => {
 
     const projects = [
         {
+            title: 'Stock Tracking App',
+            description: 'A small, responsive, real-time stock app for the Indian stock market',
+            technologies: ['React.js', 'FastAPI', 'Yahoo Finance API', 'Chart.js', 'Tailwind CSS', 'lucide-react'],
+            github: 'https://github.com/Aditya-Swain/stock-dashboard-frontend',
+            live: 'https://trackstockhistory.netlify.app/',
+            image: stk2
+        },
+        {
             title: 'Invoice Rocket',
             description: 'A full-stack application where people can manage & track  their business invoices.',
             technologies: ['React.js', 'Django', 'MySQL', 'AG-Grid', 'Recharts', 'Material-UI', 'Tailwind CSS'],
@@ -71,19 +79,19 @@ const Portfolio = () => {
         {
             title: 'Cloud Drive App',
             description: 'A full-stack cloud-based application that allows users to seamlessly connect and manage multiple cloud storage accounts (Google Drive, Dropbox, OneDrive) from a single unified interface.',
-            technologies: ['React.js','Spring Boot', 'Django', 'MySQL', 'Material-UI','Google Drive API','Dropbox API' ],
+            technologies: ['React.js', 'Spring Boot', 'Django', 'MySQL', 'Material-UI', 'Google Drive API', 'Dropbox API'],
             github: 'https://github.com/Aditya-Swain/cloud-drive-frontend',
             live: '#',
             image: cloudDrive
         },
-        {
-            title: 'Stock Management & Recovery Calculation App',
-            description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
-            technologies: ['React.js', 'Django', 'Postgresql', 'Material-UI', 'AG-Grid', 'Socket.io', 'Recharts'],
-            github: '#',
-            live: '#',
-            image: yourStock
-        },
+        // {
+        //     title: 'Stock Management & Recovery Calculation App',
+        //     description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
+        //     technologies: ['React.js', 'Django', 'Postgresql', 'Material-UI', 'AG-Grid', 'Socket.io', 'Recharts'],
+        //     github: '#',
+        //     live: '#',
+        //     image: yourStock
+        // },
         {
             title: 'Online Banking System',
             description: 'An online banking system that allows users to manage accounts, view transaction history, and perform basic banking operations through a user-friendly interface.',
@@ -97,7 +105,7 @@ const Portfolio = () => {
             description: 'A responsive website for barber shop.',
             technologies: ['HTML5', 'JavaScript', , 'CSS3'],
             github: 'https://github.com/Aditya-Swain/Barber_shop_',
-            live: 'https://barbershopgg.netlify.app/',
+            live: 'https://barbershopgg.netlify.app',
             image: barbarShop
         }
     ];
@@ -184,7 +192,7 @@ const Portfolio = () => {
 
                             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
                                 Passionate about creating{" "}
-                                <span className="text-cyan-400 font-semibold">innovative</span>{" "}
+                                <span className="text-400 font-semibold">innovative</span>{" "}
                                 web solutions that make a difference
                             </p>
 
@@ -395,6 +403,7 @@ const Portfolio = () => {
                                         </div>
 
                                         <div className="flex gap-3">
+                                            {(project.github !== '#') &&
                                             <a
                                                 href={project.github}
                                                 className="flex items-center gap-1 text-sm text-gray-400 hover:text-cyan-400 transition-colors duration-300"
@@ -402,6 +411,8 @@ const Portfolio = () => {
                                                 <Github size={16} />
                                                 Code
                                             </a>
+}
+                                            {(project.live !== '#') &&
                                             <a
                                                 href={project.live}
                                                 className="flex items-center gap-1 text-sm text-gray-400 hover:text-purple-400 transition-colors duration-300"
@@ -409,6 +420,7 @@ const Portfolio = () => {
                                                 <ExternalLink size={16} />
                                                 Live Demo
                                             </a>
+}
                                         </div>
                                     </div>
                                 </div>
