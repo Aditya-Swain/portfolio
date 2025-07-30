@@ -60,14 +60,7 @@ const Portfolio = () => {
     };
 
     const projects = [
-        {
-            title: 'Stock Tracking App',
-            description: 'A small, responsive, real-time stock app for the Indian stock market',
-            technologies: ['React.js', 'FastAPI', 'Yahoo Finance API', 'Chart.js', 'Tailwind CSS', 'lucide-react'],
-            github: 'https://github.com/Aditya-Swain/stock-dashboard-frontend',
-            live: 'https://trackstockhistory.netlify.app/',
-            image: stk2
-        },
+        
         {
             title: 'Invoice Rocket',
             description: 'A full-stack application where people can manage & track  their business invoices.',
@@ -77,6 +70,14 @@ const Portfolio = () => {
             image: invRocket
         },
         {
+            title: 'Stock Management & Recovery Calculation App',
+            description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
+            technologies: ['React.js', 'Django', 'Postgresql', 'Material-UI', 'AG-Grid', 'Socket.io', 'Recharts'],
+            github: 'https://github.com/Aditya-Swain/stock-analysis-frontend',
+            live: '#',
+            image: yourStock
+        },
+        {
             title: 'Cloud Drive App',
             description: 'A full-stack cloud-based application that allows users to seamlessly connect and manage multiple cloud storage accounts (Google Drive, Dropbox, OneDrive) from a single unified interface.',
             technologies: ['React.js', 'Spring Boot', 'Django', 'MySQL', 'Material-UI', 'Google Drive API', 'Dropbox API'],
@@ -84,14 +85,15 @@ const Portfolio = () => {
             live: '#',
             image: cloudDrive
         },
-        // {
-        //     title: 'Stock Management & Recovery Calculation App',
-        //     description: 'A stock management tool with real-time stock values in graphical interface and recovery calculation features.',
-        //     technologies: ['React.js', 'Django', 'Postgresql', 'Material-UI', 'AG-Grid', 'Socket.io', 'Recharts'],
-        //     github: '#',
-        //     live: '#',
-        //     image: yourStock
-        // },
+        {
+            title: 'Stock Tracking App',
+            description: 'A small, responsive, real-time stock app for the Indian stock market',
+            technologies: ['React.js', 'FastAPI', 'Yahoo Finance API', 'Chart.js', 'Tailwind CSS', 'lucide-react'],
+            github: 'https://github.com/Aditya-Swain/stock-dashboard-frontend',
+            live: 'https://trackstockhistory.netlify.app/',
+            image: stk2
+        },
+        
         {
             title: 'Online Banking System',
             description: 'An online banking system that allows users to manage accounts, view transaction history, and perform basic banking operations through a user-friendly interface.',
